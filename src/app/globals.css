@@ -2,20 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-inter: var(--font-inter);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .page-transition {
+    @apply animate-fade-in;
+  }
+  
+  .hover-effect {
+    @apply transition-all duration-200 hover:scale-[1.02];
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better dark mode transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.loading-skeleton {
+  background: linear-gradient(90deg, 
+    theme('colors.gray.200') 25%, 
+    theme('colors.gray.100') 50%, 
+    theme('colors.gray.200') 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.dark .loading-skeleton {
+  background: linear-gradient(90deg, 
+    theme('colors.gray.800') 25%, 
+    theme('colors.gray.700') 50%, 
+    theme('colors.gray.800') 75%
+  );
+}
+
+canvas {
+  display: block;
+}
+
+/* Arka plan renk geçişlerini yumuşat */
+.dark {
+  transition: background-color 0.3s ease-in-out;
 }
