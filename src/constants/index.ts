@@ -11,8 +11,8 @@ export const SITE_CONFIG = {
   url: 'https://meshtr.org',
   ogImage: '/og-image.png',
   links: {
-    whatsapp: 'https://chat.whatsapp.com/xxx',
-    discord: 'https://discord.gg/xxx',
-    github: 'https://github.com/meshtastic'
+    whatsapp: 'https://chat.whatsapp.com/BXJ87SlHig3CbV3fQ90WsH',
+    discord: 'https://discord.gg/purgatoria',
+    github: 'https://github.com/Meshtastic-Turkiye-Toplulugu'
   }
 } as const 
