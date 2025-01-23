@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 dark:bg-black/90 border-b dark:border-none text-gray-900 dark:text-white shadow-sm backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-300 dark:border-gray-800 text-gray-900 dark:text-white shadow-sm backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link 
           href="/" 
@@ -37,10 +37,10 @@ export default function Header() {
               <Link 
                 key={path}
                 href={path} 
-                className={`px-3 py-2 rounded-md transition-all duration-200 ${
+                className={`px-3 py-2 text-sm font-bold rounded-md ${
                   pathname === path 
-                    ? 'text-meshtastic-primary bg-gray-100 dark:bg-gray-900'
-                    : 'hover:text-meshtastic-primary hover:bg-gray-100 dark:hover:bg-gray-900'
+                    ? 'text-meshtastic-primary border-2 border-meshtastic-primary'
+                    : 'hover:text-meshtastic-primary border border-transparent'
                 }`}
               >
                 {label}

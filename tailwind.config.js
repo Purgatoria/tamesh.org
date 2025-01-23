@@ -9,9 +9,9 @@ export default {
     extend: {
       colors: {
         meshtastic: {
-          primary: '#6FE358',
+          primary: '#67ea94',
           accent: '#4CAF50',
-          hover: '#43A047',
+          hover: '#59963a',
           dark: '#1A1A1A',
           darker: '#0D0D0D',
         },

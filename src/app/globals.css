@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --font-inter: var(--font-inter);
+    --primary: #67ea94; /* Primary renk tanımı */
   }
 }
 
@@ -59,4 +60,9 @@ canvas {
 /* Arka plan renk geçişlerini yumuşat */
 .dark {
   transition: background-color 0.3s ease-in-out;
+}
+
+/* Örnek kullanım */
+.button {
+  background-color: var(--primary); /* Primary rengi buton arka planı için kullan */
 }
