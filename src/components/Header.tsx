@@ -16,7 +16,7 @@ export default function Header() {
           href="/" 
           className="text-xl font-bold transition-colors duration-200 hover:text-meshtastic-primary flex items-center gap-2"
         >
-          <Image src="meshtastic_powered.png" width={48} height={48} className='mr-3' alt={SITE_CONFIG.name+` logo`} />
+          <Image src="meshtastic-powered.svg" width={48} height={48} className='mr-3' alt={SITE_CONFIG.name+` logo`} />
           <span>{SITE_CONFIG.name}</span>
         </Link>
         <div className="flex items-center gap-4">
