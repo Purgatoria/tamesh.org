@@ -1,4 +1,6 @@
-export const MENU_ITEMS = [
+type MenuItem = { path: string; label: string };
+
+export const MENU_ITEMS: MenuItem[] = [
   { path: '/', label: 'Ana Sayfa' },
   { path: '/kilavuz', label: 'Kurulum' },
   //{ path: '/mqtt', label: 'MQTT Ağına Katıl' }
@@ -8,7 +10,7 @@ export const SITE_CONFIG = {
   name: 'Meshtastic Türkiye Topluluğu',
   description: 'Meshtastic Türkiye Topluluğu',
   url: 'https://tamesh.org',
-  ogImage: '/og-image.png',
+  ogImage: '/public/meshtastic-powered.svg',
   contact: 'info@tamesh.org'
 } as const 
 
