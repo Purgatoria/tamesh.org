@@ -5,7 +5,7 @@ export const MENU_ITEMS = [
 ];
 
 export const SITE_CONFIG = {
-  name: 'Meshtastic Türkiye',
+  name: 'Meshtastic Türkiye Topluluğu',
   description: 'Meshtastic Türkiye Topluluğu',
   url: 'https://tamesh.org',
   ogImage: '/og-image.png',

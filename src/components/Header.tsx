@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import ThemeToggle from './ThemeToggle'
 import { usePathname } from 'next/navigation'
 import { MENU_ITEMS, SITE_CONFIG } from '@/constants'
@@ -15,20 +16,7 @@ export default function Header() {
           href="/" 
           className="text-xl font-bold transition-colors duration-200 hover:text-meshtastic-primary flex items-center gap-2"
         >
-          <svg 
-            className="h-6 w-6" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M13 10V3L4 14h7v7l9-11h-7z"
-            />
-          </svg>
+          <Image src="meshtastic_powered.png" width={48} height={48} className='mr-3' alt={SITE_CONFIG.name+` logo`} />
           <span>{SITE_CONFIG.name}</span>
         </Link>
         <div className="flex items-center gap-4">
