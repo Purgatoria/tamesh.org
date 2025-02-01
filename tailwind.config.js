@@ -1,31 +1,37 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  darkMode: 'class',
-  theme: {
-    extend: {
-      colors: {
-        meshtastic: {
-          primary: '#67ea94',
-          accent: '#4CAF50',
-          hover: '#59963a',
-          dark: '#1A1A1A',
-          darker: '#0D0D0D',
+module.exports = {
+    darkMode: 'class',
+    content: [
+        './src/pages/**/*.{js,jsx}',
+        './src/components/**/*.{js,jsx}',
+        './src/app/**/*.{js,jsx}',
+    ],
+    theme: {
+        container: {
+            center: true,
+            padding: '1rem',
         },
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+        extend: {
+            colors: {
+                primary: {
+                    50: '#f0fdf7',
+                    100: '#dcfceb',
+                    200: '#bbf7d6',
+                    300: '#67ea94',
+                    400: '#47e584',
+                    500: '#67ea94',
+                    600: '#2bba6c',
+                    700: '#27955a',
+                    800: '#24774c',
+                    900: '#1f6141',
+                },
+                dark: {
+                    50: '#18191E',
+                    100: '#1E1F25',
+                    200: '#252730',
+                }
+            }
         },
-      },
     },
-  },
-  plugins: [],
+    plugins: [],
 } 

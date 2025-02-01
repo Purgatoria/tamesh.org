@@ -2,67 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tema geçiş animasyonu */
+* {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Bazı elementleri animasyondan hariç tutmak için */
+.no-theme-transition * {
+  transition: none !important;
+}
+
 @layer base {
   :root {
-    --font-inter: var(--font-inter);
-    --primary: #67ea94; /* Primary renk tanımı */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
   }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+body {
+  @apply bg-white dark:bg-dark-200 text-gray-900 dark:text-white;
 }
 
 @layer components {
-  .page-transition {
-    @apply animate-fade-in;
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
-  .hover-effect {
-    @apply transition-all duration-200 hover:scale-[1.02];
-  }
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Better dark mode transitions */
-* {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Loading skeleton animation */
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.loading-skeleton {
-  background: linear-gradient(90deg, 
-    theme('colors.gray.200') 25%, 
-    theme('colors.gray.100') 50%, 
-    theme('colors.gray.200') 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-}
-
-.dark .loading-skeleton {
-  background: linear-gradient(90deg, 
-    theme('colors.gray.800') 25%, 
-    theme('colors.gray.700') 50%, 
-    theme('colors.gray.800') 75%
-  );
-}
-
-canvas {
-  display: block;
-}
-
-/* Arka plan renk geçişlerini yumuşat */
-.dark {
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Örnek kullanım */
-.button {
-  background-color: var(--primary); /* Primary rengi buton arka planı için kullan */
 }
