@@ -57,9 +57,9 @@ export default function Header() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-4">
                         <nav className="flex items-center gap-1">
-                            {mainNavigation.map((item) => (
+                            {mainNavigation.map((item, idx) => (
                                 <Link
-                                    key={item.href}
+                                    key={item.href + '-' + idx}
                                     href={item.href}
                                     className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                                         isActivePage(item.href)
@@ -102,9 +102,9 @@ export default function Header() {
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <div className="md:hidden py-2 space-y-1">
-                        {mainNavigation.map((item) => (
+                        {mainNavigation.map((item, idx) => (
                             <Link
-                                key={item.href}
+                                key={item.href + '-' + idx}
                                 href={item.href}
                                 className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
                                     isActivePage(item.href)

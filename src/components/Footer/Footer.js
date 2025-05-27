@@ -25,8 +25,8 @@ export default function Footer() {
                             Bağlantılar
                         </h3>
                         <ul className="space-y-2">
-                            {mainNavigation.map((item) => (
-                                <li key={item.href}>
+                            {mainNavigation.map((item, idx) => (
+                                <li key={item.href + '-nav-' + idx}>
                                     <Link href={item.href} className="hover:text-primary-500 transition-colors">{item.title}</Link>
                                 </li>
                             ))}
@@ -39,8 +39,8 @@ export default function Footer() {
                             Topluluk
                         </h3>
                         <ul className="space-y-2">
-                        {communityLinks.map((item) => (
-                                <li key="{item.href}">
+                        {communityLinks.map((item, idx) => (
+                                <li key={item.href + '-community-' + idx}>
                                     <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary-500 transition-colors">
                                         {item.title}
                                     </a>
@@ -55,8 +55,8 @@ export default function Footer() {
                             Resmi Meshtastic
                         </h3>
                         <ul className="space-y-2">
-                            {officialLinks.map((item) => (
-                                <li key="{item.href}">
+                            {officialLinks.map((item, idx) => (
+                                <li key={item.href + '-official-' + idx}>
                                     <a href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary-500 transition-colors">
                                         {item.title}
                                     </a>
