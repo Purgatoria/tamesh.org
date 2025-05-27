@@ -1,13 +1,13 @@
 'use client'
 
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import { ThemeProvider } from '@/components/Theme/ThemeProvider';
 import PageTransition from '@/components/Layout/PageTransition';
 import { SITE_INFO } from '@/constants/navigation';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,20 +17,6 @@ export default function RootLayout({ children }) {
             <head>
                 <title>{SITE_INFO.title}</title>
                 <meta name="description" content={SITE_INFO.description} />
-                
-                {/* Google Tag Manager */}
-                <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-DT62H6PKGB"
-                    strategy="afterInteractive"
-                />
-                <Script id="gtag-init" strategy="afterInteractive">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-DT62H6PKGB');
-                    `}
-                </Script>
             </head>
             <body className={inter.className}>
                 <ThemeProvider>
@@ -42,6 +28,7 @@ export default function RootLayout({ children }) {
                         <Footer />
                     </div>
                 </ThemeProvider>
+                <GoogleAnalytics gaId="G-3JJZTHYXCW" />
             </body>
         </html>
     );
