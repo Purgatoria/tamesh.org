@@ -7,7 +7,7 @@ Purgatoria Topluluğu'nun bir alt topluluğu olan Meshtastic Türkiye Topluluğu
 
 ## Geliştirmeye Katkıda Bulunma (Pull Request)
 1. Bu repoyu kendi GitHub hesabınıza çatallayın (Fork).
-2. Kendi modülünüzü .js dosyası olarak ekleyin.
+2. Gerkli düzeltmeleri yapın.
 3. Kendi reponuza commit edip pushlayın.
 4. Bu repoya bir Pull Request (PR) açın.
 5. PR'ınız onaylandığında, ana sunucu güncellenecek ve modülünüz ağda aktif olacaktır!
