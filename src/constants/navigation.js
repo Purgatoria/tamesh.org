@@ -18,8 +18,12 @@ export const SITE_INFO = {
 
 export const communityLinks = [
     {
+        title: 'Whatsapp Grubu',
+        href: 'https://wp.purgatoria.net/',
+    },
+    {
         title: 'Discord Sunucusu',
-        href: 'https://discord.gg/purgatoria',
+        href: 'https://dc.purgatoria.net/',
     },
     {
         title: 'Facebook Grubu',
@@ -31,7 +35,11 @@ export const communityLinks = [
     },
     {
         title: 'Github',
-        href: 'https://github.com/Meshtastic-Turkiye-Toplulugu',
+        href: 'https://github.com/Purgatoria',
+    },
+    {
+        title: 'Purgatoria',
+        href: 'https://purgatoria.net/',
     }
 ];
 

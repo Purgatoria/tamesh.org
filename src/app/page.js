@@ -136,7 +136,18 @@ export default function Home() {
                     </h2>
                     <div className="flex flex-wrap justify-center gap-4">
                         <a 
-                            href="https://discord.gg/purgatoria"
+                            href="https://wp.purgatoria.net/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                            WhatsApp
+                            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="50 50 540 540">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://dc.purgatoria.net/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center px-6 py-3 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white/10 transition-colors"
@@ -158,7 +169,7 @@ export default function Home() {
                             </svg>
                         </a>
                         <a 
-                            href="https://github.com/Meshtastic-Turkiye-Toplulugu"
+                            href="https://github.com/Purgatoria"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center px-6 py-3 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white/10 transition-colors"
@@ -166,6 +177,18 @@ export default function Home() {
                             GitHub
                             <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48C19.137 20.107 22 16.373 22 11.969 22 6.463 17.522 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://purgatoria.net/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                            Purgatoria
+                            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 243.95 377.57">
+                                <rect x="78.79" y="334.29" width="43.29" height="43.29" rx="2.47" ry="2.47"/>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M243.95,123.68C243.95,55.85,189.35.78,121.7.02c-.26,0-.52-.01-.78-.02-.07,0-.14,0-.21,0-.14,0-.28,0-.43,0-.38,0-.75.02-1.12.02-1.34,0-2.67.03-3.99.09-.3.01-.59.03-.89.04-1.55.07-3.1.17-4.64.3-.1,0-.19.02-.29.03C63.37,4.43,24.59,33.51,6.81,73.93l-.99,2.91c-1.86,4.55-3.46,9.23-4.78,14.03l-1.03,3.03,40.39,40.39,35.16,35.16c.97.97,2.53.97,3.5,0l27.11-27.11c.97-.97.97-2.53,0-3.5l-55.45-55.45c13.85-23.87,39.62-39.97,69.18-40.11.34,0,.68,0,1.01,0,.66,0,1.32.03,1.98.05.93.03,1.87.07,2.79.13.21.01.43.03.64.05,40.71,3.17,73.26,37.16,74.12,78.42.93,44.51-34.33,80.96-78.36,82.05v.04h-40.81c-1.37,0-2.47,1.11-2.47,2.47v116.72c0,1.37,1.11,2.47,2.47,2.47h38.34c1.37,0,2.47-1.11,2.47-2.47v-75.9c53.73-.86,99.13-35.98,115.32-84.48h.22c4.11-12.31,6.34-25.48,6.34-39.18Z"/>
                             </svg>
                         </a>
                     </div>
