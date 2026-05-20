@@ -25,6 +25,6 @@ npm run build
 echo "=> CloudPanel servisleri yeniden başlatılıyor..."
 # Not: sudo gerekiyorsa clpctl önünde sudo kullanılabilir. 
 # CloudPanel dökümantasyonuna göre clpctl site:restart:services komutu kullanılır.
-clpctl site:restart:services --domainName=tamesh.org
+# clpctl site:restart:services --domainName=tamesh.org
 
 echo "[$(date)] Deployment başarıyla tamamlandı!"
