@@ -8,7 +8,7 @@ export default function PageTransition({ children }) {
 
     return (
         <motion.div 
-            className="flex-grow"
+            className="grow"
             key={pathname}
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}

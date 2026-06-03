@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-white dark:bg-dark-200 transition-colors">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-gradient-to-b from-primary-500/10 via-transparent to-transparent dark:from-primary-900/20">
+            <section className="relative overflow-hidden bg-linear-to-b from-primary-500/10 via-transparent to-transparent dark:from-primary-900/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
                     <div className="text-center space-y-8">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
@@ -32,7 +32,7 @@ export default function Home() {
 
                 {/* Dekoratif Arka Plan */}
                 <div className="absolute inset-0 -z-10">
-                    <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] opacity-25"></div>
+                    <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-size-[16px_16px] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] opacity-25"></div>
                 </div>
             </section>
 
