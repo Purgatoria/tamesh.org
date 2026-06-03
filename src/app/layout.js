@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
             <head>
                 <title>{SITE_INFO.title}</title>
                 <meta name="description" content={SITE_INFO.description} />
+                <link rel="icon" type="image/svg+xml" href="/tamesh.svg" />
             </head>
             <body className={inter.className}>
                 <ThemeProvider>
